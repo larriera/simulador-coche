@@ -28,9 +28,9 @@ let walls = [
 let tControl = 0;
 let tDuracion = Infinity;
 
-let sensor_frontal = 0;
-let sensor_derecho = 0;
-let sensor_izquierdo = 0;
+let sonar_frontal = 0;
+let sonar_derecho = 0;
+let sonar_izquierdo = 0;
 
 const AVANZAR = "AVANZAR";
 const GIRAR_D = "GIRAR_D";
