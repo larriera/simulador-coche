@@ -149,9 +149,9 @@ function medirDistanciaAngulo(thetaOffset) {
 }
 
 function medirSensores() {
-  sensor_frontal = medirDistanciaAngulo(0);
-  sensor_izquierdo = medirDistanciaAngulo(-Math.PI/2);
-  sensor_derecho = medirDistanciaAngulo(Math.PI/2);
+  sonar_frontal = medirDistanciaAngulo(0);
+  sonar_izquierdo = medirDistanciaAngulo(-Math.PI/2);
+  sonar_derecho = medirDistanciaAngulo(Math.PI/2);
 }
 
 // --- DRAW ---
@@ -192,9 +192,9 @@ function drawSensorLinea(dist, angOffset) {
 }
 
 function drawSensors() {
-  drawSensorLinea(sensor_frontal, 0);
-  drawSensorLinea(sensor_izquierdo, -Math.PI / 2);
-  drawSensorLinea(sensor_derecho, Math.PI / 2);
+  drawSensorLinea(sonar_frontal, 0);
+  drawSensorLinea(sonar_izquierdo, -Math.PI / 2);
+  drawSensorLinea(sonar_derecho, Math.PI / 2);
 }
 
 function drawWalls() {
@@ -210,7 +210,7 @@ function drawDebug() {
   textSize(14);
 
   text("Estado: " + estado, 10, 20);
-  text("Distancia: " + sensor_frontal.toFixed(1), 10, 40);
+  text("Distancia: " + sonar_frontal.toFixed(1), 10, 40);
   text("vL: " + robot.vL.toFixed(2), 10, 60);
   text("vR: " + robot.vR.toFixed(2), 10, 80);
 }
