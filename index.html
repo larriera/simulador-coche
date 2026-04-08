@@ -7,22 +7,22 @@
 </head>
 <body>
 
-<div style="position:absolute; left:620px; top:10px; width:320px; font-family: 'Courier New', Courier, monospace;">
+<div style="position:absolute; left:620px; top:10px; width:550px; font-family: 'Courier New', Courier, monospace;">
   <button onclick="runCode()">▶ Ejecutar</button>
   <button onclick="detenerEjecucion()">&#10074;&#10074; Detener</button>
   <button onclick="reiniciar()">&#8635; Reiniciar</button>
   <p>
   ...
   <br>enum Estados {AVANZAR, GIRAR_D, GIRAR_I, RETROCEDER};
-  <br>Estados estado;
-  <br>int tControl;
-  <br>int tDuracion;
+  <br>Estados <b>estado</b>;
+  <br>int <b>tControl</b>;
+  <br>int <b>tDuracion</b>;
   <br>...
   <br>void loop() {
   <br>//revisamos los sonares a ver si detectan algo
-  <br>sonar_frontal = revisarSonares(SONAR_FRONTAL);
-  <br>sonar_izquierdo = revisarSonares(SONAR_IZQ);
-  <br>sonar_derecho = revisarSonares(SONAR_DER);
+  <br><b>sonar_frontal</b> = revisarSonares(SONAR_FRONTAL);
+  <br><b>sonar_izquierdo</b> = revisarSonares(SONAR_IZQ);
+  <br><b>sonar_derecho</b> = revisarSonares(SONAR_DER);
 </p>
   <textarea id="code" style="width:100%; height:200px;">
 // Completar...
